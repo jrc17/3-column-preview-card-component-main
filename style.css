@@ -7,9 +7,6 @@ body {
   font-family: "Lexend Deca", sans-serif;
   line-height: 1;
   min-height: 100vh;
-  /* display: grid;
-  place-content: center;
-  justify-items: stretch; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,11 +17,11 @@ body {
 }
 main {
   display: grid;
-  /* gap: 1rem; */
 
   max-width: 19rem;
 
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .car-section {
@@ -35,16 +32,12 @@ main {
 }
 .car-section:first-child {
   background-color: #e38826;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 .car-section:nth-child(2) {
   background-color: #006970;
 }
 .car-section:last-child {
   background-color: #004241;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 .icon {
   width: 5ch;
@@ -123,18 +116,6 @@ footer a {
   main {
     max-width: 55rem;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .car-section:first-child {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0rem;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .car-section:last-child {
-    background-color: #004241;
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
   }
   .car-description {
     margin-bottom: 2.7rem;
